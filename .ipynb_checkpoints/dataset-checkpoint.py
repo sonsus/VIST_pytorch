@@ -19,7 +19,7 @@ class ImgDset_Folder(dat.Dataset):
         self.transform=tr.Compose(transform_list)
 
     def __getitem__(self, index):#used for dataset[i]
-        img = load_img( self.img_path / self.img_names[index] )
+        img = load_img( Path(self.img_path / self.img_names[index]) )
         imgtensor = self.transform(img)
         return imgtensor
 
