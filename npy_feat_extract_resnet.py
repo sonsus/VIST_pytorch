@@ -23,9 +23,9 @@ import pickle
 
 
 #datasets
-vist_train=d.ImgDset_Folder(Path("./data/train"))  
-vist_val=d.ImgDset_Folder(Path("./data/val"))  
-vist_test=d.ImgDset_Folder(Path("./data/test"))  
+vist_train=d.ImgDset_Folder(Path("./datatest/train"))  
+vist_val=d.ImgDset_Folder(Path("./datatest/val"))  
+vist_test=d.ImgDset_Folder(Path("./datatest/test"))  
 
 
 #dataloaders
